@@ -18,8 +18,9 @@ Route::get('/', function () {
 */
 
 Route::get('/', function () {
-  return view('index')->with([
-      'greeting' => 'Hello Laravel',
-      'name'     => 'gmyou'
-  ]);
+  $view = view('index');
+  $view->greeting = "Hey~ What's up";
+  $view->name = 'everyone';
+
+  return $view;
 });

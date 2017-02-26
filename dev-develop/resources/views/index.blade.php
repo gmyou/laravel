@@ -1,3 +1,3 @@
 <p>
-    {{ $greeting }} by {{ $name or '' }}
+    {{ $greeting }} to {{ $name or '' }}
 </p>
