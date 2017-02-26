@@ -11,6 +11,15 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
+});
+*/
+
+Route::get('/', function () {
+  return view('index')->with([
+      'greeting' => 'Hello Laravel',
+      'name'     => 'gmyou'
+  ]);
 });
