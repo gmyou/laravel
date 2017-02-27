@@ -12,3 +12,6 @@
     $ mkdir laravel
     $ cd laravel
     $ composer create-project laravel/laravel dev-develop
+    $ cd dev-develop
+    $ composer update --no-scripts  
+    $ php artisan serve
