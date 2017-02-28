@@ -27,3 +27,10 @@ mysql> GRANT ALL PRIVILEGES
     $ cp .env.example .env
     $ php artisan key:generate
     $ php artisan serve
+
+- [ ] Migration Issue
+    - [ ] Parse error    
+    ```
+    >>> php artisan make:migration create_posts_table
+    PHP Parse error: Syntax error, unexpected T_STRING on line 1
+    ```
