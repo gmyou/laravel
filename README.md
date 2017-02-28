@@ -14,4 +14,11 @@
     $ composer create-project laravel/laravel dev-develop
     $ cd dev-develop
     $ composer update --no-scripts  
+    $ cp .env.example .env
+        mysql> GRANT ALL PRIVILEGES 
+        ->        ON homestead.* 
+        ->        TO 'homestead'@'localhost'
+        ->        IDENTIFIED BY 'secret' 
+        ->        WITH GRANT OPTION;
+    $ php artisan key:generate
     $ php artisan serve
