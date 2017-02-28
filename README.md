@@ -6,7 +6,7 @@
 - ruby
 - brew
 - composer
-- mysql
+- mysql 5.7.13
     
 ```
 mysql> create database homestead;
