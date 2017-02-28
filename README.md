@@ -6,6 +6,13 @@
 - ruby
 - brew
 - composer
+- mysql
+    mysql> create database homestead;
+    mysql> GRANT ALL PRIVILEGES 
+    ->        ON homestead.* 
+    ->        TO 'homestead'@'localhost'
+    ->        IDENTIFIED BY 'secret' 
+    ->        WITH GRANT OPTION;
 
 ## Install Laravel *on Anywhere You Want*
     
@@ -15,10 +22,5 @@
     $ cd dev-develop
     $ composer update --no-scripts  
     $ cp .env.example .env
-        mysql> GRANT ALL PRIVILEGES 
-        ->        ON homestead.* 
-        ->        TO 'homestead'@'localhost'
-        ->        IDENTIFIED BY 'secret' 
-        ->        WITH GRANT OPTION;
     $ php artisan key:generate
     $ php artisan serve
