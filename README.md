@@ -31,6 +31,7 @@ mysql> GRANT ALL PRIVILEGES
 - [ ] Migration Issue
     - [ ] Parse error    
     ```
+    $ php artisan tinker
     >>> php artisan make:migration create_posts_table
     PHP Parse error: Syntax error, unexpected T_STRING on line 1
     ```
