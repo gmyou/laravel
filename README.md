@@ -7,12 +7,15 @@
 - brew
 - composer
 - mysql
+    
+```
     mysql> create database homestead;
     mysql> GRANT ALL PRIVILEGES 
     ->        ON homestead.* 
     ->        TO 'homestead'@'localhost'
     ->        IDENTIFIED BY 'secret' 
     ->        WITH GRANT OPTION;
+```
 
 ## Install Laravel *on Anywhere You Want*
     
