@@ -37,6 +37,7 @@ mysql> CREATE TABLE `posts` (
 ## tinker console
     $ php artisan tinker
 
+```tinker
 >>> DB::table('posts')->get();
 => Illuminate\Support\Collection {#644
      all: [],
@@ -54,3 +55,4 @@ mysql> CREATE TABLE `posts` (
        },
      ],
    }
+```
