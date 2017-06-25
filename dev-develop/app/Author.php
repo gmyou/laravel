@@ -8,5 +8,4 @@ class Author extends Model
 {
     public $timestamps = false;
     protected $fillable = ['email', 'password'];
-
 }
