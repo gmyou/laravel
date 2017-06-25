@@ -9,12 +9,18 @@
 - mysql 5.7.13
     
 ```
-mysql> create database homestead;
+mysql> create database myProject;
 mysql> GRANT ALL PRIVILEGES 
-->        ON homestead.* 
-->        TO 'homestead'@'localhost'
-->        IDENTIFIED BY 'secret' 
-->        WITH GRANT OPTION;
+       ON homestead.* 
+       TO 'homestead'@'localhost'
+       IDENTIFIED BY 'secret' 
+       WITH GRANT OPTION;
+mysql> CREATE TABLE `posts` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 ```
 
 ## Install Laravel *on Anywhere You Want*
