@@ -34,3 +34,4 @@ Route::get('/', function () {
 */
 
 Route::get('/', 'WelcomController@index');
+Route::resource('/', 'ArticlesController');
