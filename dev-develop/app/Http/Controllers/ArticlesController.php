@@ -13,7 +13,7 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        //
+        return __METHOD__ . ' Article 컬렉션 조회';
     }
 
     /**
@@ -23,7 +23,7 @@ class ArticlesController extends Controller
      */
     public function create()
     {
-        //
+        return __METHOD__ . ' Article 컬렉션 생성폼';
     }
 
     /**
@@ -34,7 +34,7 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return __METHOD__ . ' Article 컬렉션 생성';
     }
 
     /**
@@ -45,7 +45,7 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-        //
+        return __METHOD__ . ' Article 컬렉션 조회'.$id;
     }
 
     /**
@@ -56,7 +56,7 @@ class ArticlesController extends Controller
      */
     public function edit($id)
     {
-        //
+        return __METHOD__ . ' Article 컬렉션 수정폼';
     }
 
     /**
@@ -68,7 +68,7 @@ class ArticlesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return __METHOD__ . ' Article 컬렉션 수정';
     }
 
     /**
@@ -79,6 +79,6 @@ class ArticlesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return __METHOD__ . ' Article 컬렉션 삭제'.$id;
     }
 }
