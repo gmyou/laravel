@@ -15,7 +15,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-*/
+
 
 Route::get('/', function () {
   $view = view('index');
@@ -31,3 +31,6 @@ Route::get('/', function () {
 
   return $view;
 });
+*/
+
+Route::get('/', 'WelcomController@index');
