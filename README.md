@@ -34,10 +34,23 @@ mysql> CREATE TABLE `posts` (
     $ php artisan key:generate
     $ php artisan serve
 
-- [ ] Migration Issue
-    - [ ] Parse error    
-    ```
+## tinker console
     $ php artisan tinker
-    >>> php artisan make:migration create_posts_table
-    PHP Parse error: Syntax error, unexpected T_STRING on line 1
-    ```
+
+>>> DB::table('posts')->get();
+=> Illuminate\Support\Collection {#644
+     all: [],
+   }
+
+>>> DB::insert('INSERT INTO posts(title, body) VALUE(?, ?)', ['Hello Database', 'Greeting from tinker']);
+=> true
+>>> DB::table('posts')->get();
+=> Illuminate\Support\Collection {#642
+     all: [
+       {#653
+         +"id": 1,
+         +"title": "Hello Database",
+         +"body": "Greeting from tinker",
+       },
+     ],
+   }
