@@ -9,7 +9,7 @@
 - mysql 5.7.13
     
 ```
-mysql> create database myProject;
+mysql> create database homestead;
 mysql> GRANT ALL PRIVILEGES 
        ON homestead.* 
        TO 'homestead'@'localhost'
