@@ -8,13 +8,17 @@
 - composer
 - mysql 5.7.13
     
-```
+### Create Database & User
+```sql
 mysql> create database homestead;
 mysql> GRANT ALL PRIVILEGES 
        ON homestead.* 
        TO 'homestead'@'localhost'
        IDENTIFIED BY 'secret' 
        WITH GRANT OPTION;
+```
+### Create Table After Connect User
+```sql
 mysql> CREATE TABLE `posts` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
