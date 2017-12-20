@@ -1,6 +1,6 @@
 # laravel
 
-## Prepared
+## Development environment
 - macOS Sierra 10.12.3(16D32)
 - PHP 7.1.1
 - ruby
